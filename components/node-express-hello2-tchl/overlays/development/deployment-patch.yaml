@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: node-express-hello2-tchl
+  namespace: burrzinga-hac-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoupuicluster/burrzinga-hac-tenant/n/node-express-hello2-tchl@sha256:95ac145e93cbe7eaa42fd09521cb2f332771638db30b28c3607d1e3ad33b4d15
+        name: my-nodejs
+        resources: {}
+status: {}
